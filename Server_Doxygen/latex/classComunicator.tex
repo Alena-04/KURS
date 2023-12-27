@@ -1,0 +1,101 @@
+\hypertarget{classComunicator}{}\doxysection{Класс Comunicator}
+\label{classComunicator}\index{Comunicator@{Comunicator}}
+
+
+Класс \mbox{\hyperlink{classComunicator}{Comunicator}}.  
+
+
+
+
+{\ttfamily \#include $<$Comunicator.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classComunicator_afca7a208f7f184edb9554c94639d9529}{self\+\_\+addr}} (int port, std\+::string \&err\+\_\+way)
+\begin{DoxyCompactList}\small\item\em Создание сокета сервера \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComunicator_a8b46a3c7d7e257265ebf814c51ca2be8}{client\+\_\+addr}} (int s, std\+::string \&err\+\_\+way)
+\begin{DoxyCompactList}\small\item\em Создание сокета клиента \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComunicator_a789f5abfc536a4f0e702726db27526fb}{autorized}} (int work\+\_\+sock, std\+::string file\+\_\+name, std\+::map$<$ std\+::string, std\+::string $>$ \&all\+\_\+names, std\+::string \&err\+\_\+way)
+\begin{DoxyCompactList}\small\item\em Авторизация \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \mbox{\hyperlink{classComunicator}{Comunicator}}. 
+
+Для создания сокета сервера и слушания запросов предназначен метод self\+\_\+addr ~\newline
+Для создания сокета клиента и подключения его к серверу метод client\+\_\+addr ~\newline
+Для авторизации клиента предназначен метод client\+\_\+addr ~\newline
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classComunicator_a789f5abfc536a4f0e702726db27526fb}\label{classComunicator_a789f5abfc536a4f0e702726db27526fb}} 
+\index{Comunicator@{Comunicator}!autorized@{autorized}}
+\index{autorized@{autorized}!Comunicator@{Comunicator}}
+\doxysubsubsection{\texorpdfstring{autorized()}{autorized()}}
+{\footnotesize\ttfamily int Comunicator\+::autorized (\begin{DoxyParamCaption}\item[{int}]{work\+\_\+sock,  }\item[{std\+::string}]{file\+\_\+name,  }\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{all\+\_\+names,  }\item[{std\+::string \&}]{err\+\_\+way }\end{DoxyParamCaption})}
+
+
+
+Авторизация 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em work\+\_\+sock} & сокет клиента \\
+\hline
+\mbox{\texttt{ in}}  & {\em file\+\_\+name} & файл записи логов \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+names} & словарь с базой данных \\
+\hline
+\mbox{\texttt{ in}}  & {\em err\+\_\+way} & файл записи логов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сокет клиента 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComunicator_a8b46a3c7d7e257265ebf814c51ca2be8}\label{classComunicator_a8b46a3c7d7e257265ebf814c51ca2be8}} 
+\index{Comunicator@{Comunicator}!client\_addr@{client\_addr}}
+\index{client\_addr@{client\_addr}!Comunicator@{Comunicator}}
+\doxysubsubsection{\texorpdfstring{client\_addr()}{client\_addr()}}
+{\footnotesize\ttfamily int Comunicator\+::client\+\_\+addr (\begin{DoxyParamCaption}\item[{int}]{s,  }\item[{std\+::string \&}]{err\+\_\+way }\end{DoxyParamCaption})}
+
+
+
+Создание сокета клиента 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em s} & сокет сервера \\
+\hline
+\mbox{\texttt{ in}}  & {\em err\+\_\+way} & файл записи логов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сокет клиента 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComunicator_afca7a208f7f184edb9554c94639d9529}\label{classComunicator_afca7a208f7f184edb9554c94639d9529}} 
+\index{Comunicator@{Comunicator}!self\_addr@{self\_addr}}
+\index{self\_addr@{self\_addr}!Comunicator@{Comunicator}}
+\doxysubsubsection{\texorpdfstring{self\_addr()}{self\_addr()}}
+{\footnotesize\ttfamily int Comunicator\+::self\+\_\+addr (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{std\+::string \&}]{err\+\_\+way }\end{DoxyParamCaption})}
+
+
+
+Создание сокета сервера 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em port} & порт \\
+\hline
+\mbox{\texttt{ in}}  & {\em err\+\_\+way} & файл записи логов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сокет 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Comunicator_8h}{Comunicator.\+h}}\item 
+Comunicator.\+cpp\end{DoxyCompactItemize}

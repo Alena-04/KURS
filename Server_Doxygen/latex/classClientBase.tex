@@ -1,0 +1,82 @@
+\hypertarget{classClientBase}{}\doxysection{Класс Client\+Base}
+\label{classClientBase}\index{ClientBase@{ClientBase}}
+
+
+Класс \mbox{\hyperlink{classClientBase}{Client\+Base}}.  
+
+
+
+
+{\ttfamily \#include $<$client\+\_\+base.\+h$>$}
+
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{classClientBase_a83fc0b3c37d3182e27f9ba26ffbd3b45}{read}} (std\+::string way, std\+::string err\+\_\+way)
+\begin{DoxyCompactList}\small\item\em Чтение базы данных \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classClientBase_a2450233bb64628587695b318890a9380}{find}} (std\+::string \&name, std\+::map$<$ std\+::string, std\+::string $>$ \&all)
+\begin{DoxyCompactList}\small\item\em Поиск клиента в базе данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \mbox{\hyperlink{classClientBase}{Client\+Base}}. 
+
+Для чтения базы данных предназначен метод read Для поиска клиента в базе данных предназначен метод find 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classClientBase_a2450233bb64628587695b318890a9380}\label{classClientBase_a2450233bb64628587695b318890a9380}} 
+\index{ClientBase@{ClientBase}!find@{find}}
+\index{find@{find}!ClientBase@{ClientBase}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily std\+::string Client\+Base\+::find (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{all }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Поиск клиента в базе данных 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em name} & login клиента \\
+\hline
+\mbox{\texttt{ in}}  & {\em all} & словарь с базой данных \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+строку с паролем 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classServerError}{Server\+Error}},если} & в базе данных отсутствует пользователь \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classClientBase_a83fc0b3c37d3182e27f9ba26ffbd3b45}\label{classClientBase_a83fc0b3c37d3182e27f9ba26ffbd3b45}} 
+\index{ClientBase@{ClientBase}!read@{read}}
+\index{read@{read}!ClientBase@{ClientBase}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, std\+::string $>$ Client\+Base\+::read (\begin{DoxyParamCaption}\item[{std\+::string}]{way,  }\item[{std\+::string}]{err\+\_\+way }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Чтение базы данных 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em way} & путь к базе данных \\
+\hline
+\mbox{\texttt{ in}}  & {\em err\+\_\+way} & файл записи логов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Словарь с парой login,password 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classServerError}{Server\+Error}},если} & база данных пустая \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{client__base_8h}{client\+\_\+base.\+h}}\item 
+client\+\_\+base.\+cpp\end{DoxyCompactItemize}

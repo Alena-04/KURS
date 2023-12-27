@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Server TCP: Исходный файл Comunicator.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Server TCP
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Comunicator.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Comunicator_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mdfile_8h.html">mdfile.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classComunicator.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classComunicator.html">Comunicator</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classComunicator.html#afca7a208f7f184edb9554c94639d9529">self_addr</a>(<span class="keywordtype">int</span> port, std::string &amp;err_way);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classComunicator.html#a8b46a3c7d7e257265ebf814c51ca2be8">client_addr</a>(<span class="keywordtype">int</span> s, std::string &amp;err_way);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classComunicator.html#a789f5abfc536a4f0e702726db27526fb">autorized</a>(<span class="keywordtype">int</span> work_sock, std::string file_name,std::map &lt;std::string,std::string&gt; &amp;all_names, std::string &amp;err_way);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="ttc" id="aclassComunicator_html"><div class="ttname"><a href="classComunicator.html">Comunicator</a></div><div class="ttdoc">Класс Comunicator.</div><div class="ttdef"><b>Definition:</b> Comunicator.h:20</div></div>
+<div class="ttc" id="aclassComunicator_html_a789f5abfc536a4f0e702726db27526fb"><div class="ttname"><a href="classComunicator.html#a789f5abfc536a4f0e702726db27526fb">Comunicator::autorized</a></div><div class="ttdeci">int autorized(int work_sock, std::string file_name, std::map&lt; std::string, std::string &gt; &amp;all_names, std::string &amp;err_way)</div><div class="ttdoc">Авторизация</div><div class="ttdef"><b>Definition:</b> Comunicator.cpp:53</div></div>
+<div class="ttc" id="aclassComunicator_html_a8b46a3c7d7e257265ebf814c51ca2be8"><div class="ttname"><a href="classComunicator.html#a8b46a3c7d7e257265ebf814c51ca2be8">Comunicator::client_addr</a></div><div class="ttdeci">int client_addr(int s, std::string &amp;err_way)</div><div class="ttdoc">Создание сокета клиента</div><div class="ttdef"><b>Definition:</b> Comunicator.cpp:37</div></div>
+<div class="ttc" id="aclassComunicator_html_afca7a208f7f184edb9554c94639d9529"><div class="ttname"><a href="classComunicator.html#afca7a208f7f184edb9554c94639d9529">Comunicator::self_addr</a></div><div class="ttdeci">int self_addr(int port, std::string &amp;err_way)</div><div class="ttdoc">Создание сокета сервера</div><div class="ttdef"><b>Definition:</b> Comunicator.cpp:12</div></div>
+<div class="ttc" id="amdfile_8h_html"><div class="ttname"><a href="mdfile_8h.html">mdfile.h</a></div><div class="ttdoc">Заголовочный файл для модуля mdfile.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

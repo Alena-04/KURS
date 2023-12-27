@@ -1,0 +1,67 @@
+\begin{theindex}
+
+  \item {autorized}
+    \subitem {Comunicator}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Calculator}, \hyperpage{7}
+    \subitem {math}, \hyperpage{7}
+  \item {Calculator.h}, \hyperpage{17}
+  \item {client\_addr}
+    \subitem {Comunicator}, \hyperpage{10}
+  \item {client\_base.h}, \hyperpage{18}
+  \item {ClientBase}, \hyperpage{8}
+    \subitem {find}, \hyperpage{8}
+    \subitem {read}, \hyperpage{9}
+  \item {Comunicator}, \hyperpage{9}
+    \subitem {autorized}, \hyperpage{10}
+    \subitem {client\_addr}, \hyperpage{10}
+    \subitem {self\_addr}, \hyperpage{11}
+  \item {Comunicator.h}, \hyperpage{19}
+
+  \indexspace
+
+  \item {find}
+    \subitem {ClientBase}, \hyperpage{8}
+
+  \indexspace
+
+  \item {log}
+    \subitem {LogWriter}, \hyperpage{12}
+  \item {LogWriter}, \hyperpage{11}
+    \subitem {log}, \hyperpage{12}
+
+  \indexspace
+
+  \item {math}
+    \subitem {Calculator}, \hyperpage{7}
+  \item {mdfile.h}, \hyperpage{20}
+
+  \indexspace
+
+  \item {operator()}
+    \subitem {User\_Interface}, \hyperpage{15}
+
+  \indexspace
+
+  \item {read}
+    \subitem {ClientBase}, \hyperpage{9}
+
+  \indexspace
+
+  \item {self\_addr}
+    \subitem {Comunicator}, \hyperpage{11}
+  \item {ServerError}, \hyperpage{12}
+
+  \indexspace
+
+  \item {UI\_err}
+    \subitem {User\_Interface}, \hyperpage{15}
+  \item {User\_Interface}, \hyperpage{13}
+    \subitem {operator()}, \hyperpage{15}
+    \subitem {UI\_err}, \hyperpage{15}
+    \subitem {User\_Interface}, \hyperpage{14}
+  \item {User\_Interface.h}, \hyperpage{22}
+
+\end{theindex}

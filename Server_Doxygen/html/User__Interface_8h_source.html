@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Server TCP: Исходный файл User_Interface.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Server TCP
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">User_Interface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="User__Interface_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mdfile_8h.html">mdfile.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Calculator_8h.html">Calculator.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>po = boost::program_options;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classUser__Interface.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classUser__Interface.html">User_Interface</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classUser__Interface.html#a0f4336469eef5e9c3659aff760216cef">   27</a></span>&#160;    po::options_description <a class="code" href="classUser__Interface.html#a0f4336469eef5e9c3659aff760216cef">descr</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classUser__Interface.html#afd252e7b31846742e151c1e539f29149">   29</a></span>&#160;    po::variables_map <a class="code" href="classUser__Interface.html#afd252e7b31846742e151c1e539f29149">vm</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classUser__Interface.html#aaff97011904f8b4f8a7a2f7d4c033de5">   31</a></span>&#160;    std::string <a class="code" href="classUser__Interface.html#aaff97011904f8b4f8a7a2f7d4c033de5">file</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classUser__Interface.html#a0db20b72418900cf546c2ac7d187a052">   33</a></span>&#160;    std::string <a class="code" href="classUser__Interface.html#a0db20b72418900cf546c2ac7d187a052">LogWrite</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classUser__Interface.html#abf23ecad8f9fc5724522ca191e4d3393">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classUser__Interface.html#abf23ecad8f9fc5724522ca191e4d3393">port</a>;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classUser__Interface.html#aed6610a4d7628d92110f64a723f7ddaa">UI_err</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classUser__Interface.html">User_Interface</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classUser__Interface.html">User_Interface</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classUser__Interface.html#a4ce879da4f5e6d683c135cdf8c38402c">operator()</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="ttc" id="aCalculator_8h_html"><div class="ttname"><a href="Calculator_8h.html">Calculator.h</a></div><div class="ttdoc">Заголовочный файл для модуля Calculator.</div></div>
+<div class="ttc" id="aclassUser__Interface_html"><div class="ttname"><a href="classUser__Interface.html">User_Interface</a></div><div class="ttdoc">Класс User_Interface.</div><div class="ttdef"><b>Definition:</b> User_Interface.h:23</div></div>
+<div class="ttc" id="aclassUser__Interface_html_a0db20b72418900cf546c2ac7d187a052"><div class="ttname"><a href="classUser__Interface.html#a0db20b72418900cf546c2ac7d187a052">User_Interface::LogWrite</a></div><div class="ttdeci">std::string LogWrite</div><div class="ttdoc">путь к журналом работы</div><div class="ttdef"><b>Definition:</b> User_Interface.h:33</div></div>
+<div class="ttc" id="aclassUser__Interface_html_a0f4336469eef5e9c3659aff760216cef"><div class="ttname"><a href="classUser__Interface.html#a0f4336469eef5e9c3659aff760216cef">User_Interface::descr</a></div><div class="ttdeci">po::options_description descr</div><div class="ttdoc">описание параметров командной строки</div><div class="ttdef"><b>Definition:</b> User_Interface.h:27</div></div>
+<div class="ttc" id="aclassUser__Interface_html_a4ce879da4f5e6d683c135cdf8c38402c"><div class="ttname"><a href="classUser__Interface.html#a4ce879da4f5e6d683c135cdf8c38402c">User_Interface::operator()</a></div><div class="ttdeci">void operator()()</div><div class="ttdoc">Метод operator для запуска сервера</div><div class="ttdef"><b>Definition:</b> User_Interface.cpp:15</div></div>
+<div class="ttc" id="aclassUser__Interface_html_aaff97011904f8b4f8a7a2f7d4c033de5"><div class="ttname"><a href="classUser__Interface.html#aaff97011904f8b4f8a7a2f7d4c033de5">User_Interface::file</a></div><div class="ttdeci">std::string file</div><div class="ttdoc">путь к файлу с базой данных</div><div class="ttdef"><b>Definition:</b> User_Interface.h:31</div></div>
+<div class="ttc" id="aclassUser__Interface_html_abf23ecad8f9fc5724522ca191e4d3393"><div class="ttname"><a href="classUser__Interface.html#abf23ecad8f9fc5724522ca191e4d3393">User_Interface::port</a></div><div class="ttdeci">int port</div><div class="ttdoc">номер порта</div><div class="ttdef"><b>Definition:</b> User_Interface.h:35</div></div>
+<div class="ttc" id="aclassUser__Interface_html_aed6610a4d7628d92110f64a723f7ddaa"><div class="ttname"><a href="classUser__Interface.html#aed6610a4d7628d92110f64a723f7ddaa">User_Interface::UI_err</a></div><div class="ttdeci">void UI_err()</div><div class="ttdoc">Метод UI_err для обработки ошибок</div><div class="ttdef"><b>Definition:</b> User_Interface.cpp:48</div></div>
+<div class="ttc" id="aclassUser__Interface_html_afd252e7b31846742e151c1e539f29149"><div class="ttname"><a href="classUser__Interface.html#afd252e7b31846742e151c1e539f29149">User_Interface::vm</a></div><div class="ttdeci">po::variables_map vm</div><div class="ttdoc">значения параметров командной строки</div><div class="ttdef"><b>Definition:</b> User_Interface.h:29</div></div>
+<div class="ttc" id="amdfile_8h_html"><div class="ttname"><a href="mdfile_8h.html">mdfile.h</a></div><div class="ttdoc">Заголовочный файл для модуля mdfile.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

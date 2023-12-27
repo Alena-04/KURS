@@ -1,0 +1,122 @@
+\hypertarget{classUser__Interface}{}\doxysection{Класс User\+\_\+\+Interface}
+\label{classUser__Interface}\index{User\_Interface@{User\_Interface}}
+
+
+Класс \mbox{\hyperlink{classUser__Interface}{User\+\_\+\+Interface}}.  
+
+
+
+
+{\ttfamily \#include $<$User\+\_\+\+Interface.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUser__Interface_afd49800b6ed47ed2e52d0f8e5e7cf9e7}{User\+\_\+\+Interface}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Метод \mbox{\hyperlink{classUser__Interface}{User\+\_\+\+Interface}} обработки параметров командной строки \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser__Interface_a4ce879da4f5e6d683c135cdf8c38402c}{operator()}} ()
+\begin{DoxyCompactList}\small\item\em Метод operator для запуска сервера \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classUser__Interface_aed6610a4d7628d92110f64a723f7ddaa}{UI\+\_\+err}} ()
+\begin{DoxyCompactList}\small\item\em Метод UI\+\_\+err для обработки ошибок \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUser__Interface_a0f4336469eef5e9c3659aff760216cef}\label{classUser__Interface_a0f4336469eef5e9c3659aff760216cef}} 
+po\+::options\+\_\+description \mbox{\hyperlink{classUser__Interface_a0f4336469eef5e9c3659aff760216cef}{descr}}
+\begin{DoxyCompactList}\small\item\em описание параметров командной строки \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUser__Interface_afd252e7b31846742e151c1e539f29149}\label{classUser__Interface_afd252e7b31846742e151c1e539f29149}} 
+po\+::variables\+\_\+map \mbox{\hyperlink{classUser__Interface_afd252e7b31846742e151c1e539f29149}{vm}}
+\begin{DoxyCompactList}\small\item\em значения параметров командной строки \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUser__Interface_aaff97011904f8b4f8a7a2f7d4c033de5}\label{classUser__Interface_aaff97011904f8b4f8a7a2f7d4c033de5}} 
+std\+::string \mbox{\hyperlink{classUser__Interface_aaff97011904f8b4f8a7a2f7d4c033de5}{file}}
+\begin{DoxyCompactList}\small\item\em путь к файлу с базой данных \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUser__Interface_a0db20b72418900cf546c2ac7d187a052}\label{classUser__Interface_a0db20b72418900cf546c2ac7d187a052}} 
+std\+::string \mbox{\hyperlink{classUser__Interface_a0db20b72418900cf546c2ac7d187a052}{Log\+Write}}
+\begin{DoxyCompactList}\small\item\em путь к журналом работы ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUser__Interface_abf23ecad8f9fc5724522ca191e4d3393}\label{classUser__Interface_abf23ecad8f9fc5724522ca191e4d3393}} 
+int \mbox{\hyperlink{classUser__Interface_abf23ecad8f9fc5724522ca191e4d3393}{port}}
+\begin{DoxyCompactList}\small\item\em номер порта ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \mbox{\hyperlink{classUser__Interface}{User\+\_\+\+Interface}}. 
+
+Для взаимодействия сервера с командной строкой предназначены методы\+: operator для запуска сервера и \mbox{\hyperlink{classUser__Interface}{User\+\_\+\+Interface}} для обработки параметров командной строки и UI\+\_\+err для обработки ошибок парсера \begin{DoxyWarning}{Предупреждения}
+Все параметры для ввода являются обязательными 
+\end{DoxyWarning}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classUser__Interface_afd49800b6ed47ed2e52d0f8e5e7cf9e7}\label{classUser__Interface_afd49800b6ed47ed2e52d0f8e5e7cf9e7}} 
+\index{User\_Interface@{User\_Interface}!User\_Interface@{User\_Interface}}
+\index{User\_Interface@{User\_Interface}!User\_Interface@{User\_Interface}}
+\doxysubsubsection{\texorpdfstring{User\_Interface()}{User\_Interface()}}
+{\footnotesize\ttfamily User\+\_\+\+Interface\+::\+User\+\_\+\+Interface (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Метод \mbox{\hyperlink{classUser__Interface}{User\+\_\+\+Interface}} обработки параметров командной строки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Параметры} & командной строки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Метод ничего не возвращает 
+\end{DoxyReturn}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classUser__Interface_a4ce879da4f5e6d683c135cdf8c38402c}\label{classUser__Interface_a4ce879da4f5e6d683c135cdf8c38402c}} 
+\index{User\_Interface@{User\_Interface}!operator()@{operator()}}
+\index{operator()@{operator()}!User\_Interface@{User\_Interface}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily void User\+\_\+\+Interface\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод operator для запуска сервера 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Без} & параметров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Метод ничего не возвращает 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUser__Interface_aed6610a4d7628d92110f64a723f7ddaa}\label{classUser__Interface_aed6610a4d7628d92110f64a723f7ddaa}} 
+\index{User\_Interface@{User\_Interface}!UI\_err@{UI\_err}}
+\index{UI\_err@{UI\_err}!User\_Interface@{User\_Interface}}
+\doxysubsubsection{\texorpdfstring{UI\_err()}{UI\_err()}}
+{\footnotesize\ttfamily void User\+\_\+\+Interface\+::\+UI\+\_\+err (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Метод UI\+\_\+err для обработки ошибок 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Без} & параметров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Метод ничего не возвращает 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classServerError}{Server\+Error}},если} & отсутствует обязательный параметр \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{User__Interface_8h}{User\+\_\+\+Interface.\+h}}\item 
+User\+\_\+\+Interface.\+cpp\end{DoxyCompactItemize}
